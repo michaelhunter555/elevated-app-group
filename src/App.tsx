@@ -3,6 +3,7 @@ import { Link, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home';
 import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
+import AccountDeletion from './pages/AccountDeletion';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Link to="/">Home</Link>
           <Link to="/privacy">Privacy</Link>
           <Link to="/terms">Terms</Link>
+          <Link to="/account-deletion">Account Deletion</Link>
         </nav>
       </header>
 
@@ -25,6 +27,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
+          <Route path="/account-deletion" element={<AccountDeletion />} />
         </Routes>
       </main>
 
