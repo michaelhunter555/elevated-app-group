@@ -104,6 +104,8 @@
   backdrop-filter: blur(2px);
   max-width: 300px;
   min-height: 200px;
+  display: flex;
+  flex-direction: column;
 }
 
 img {

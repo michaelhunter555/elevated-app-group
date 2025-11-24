@@ -10,20 +10,33 @@ export default function Home() {
       <section id="work" className="work-section">
         <h2>Our work</h2>
         <div style={{ 
-          display: 'flex', 
+          display: 'flex',
           flexDirection: 'row', 
-          alignItems: 'center', 
+          alignItems: 'stretch', 
           justifyContent: 'center', 
-          gap: '10px',
-
+          gap: '10px'
           }}>
           <article className="work-card">
             <img style={{ borderRadius: '10px' }} className="work-logo" width={100} height={100} src="/ba.png" alt="Barber App logo" />
             <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent:"center", gap: '10px' }}>
-            <h3 style={{}}>Barber App</h3>
-            <p style={{ fontSize: '11px', backgroundColor: 'rgba(0,0,0,1)', color: 'white', borderRadius: '5px', padding: '2px 5px' }}>Coming Soon</p>
+            <h3 style={{}}>Next Fade</h3>
+           
             </div>
             <p>Connecting local barbers with customers. Available for iOS and Android.</p>
+            <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
+
+              <div style={{ cursor: 'pointer' }}>
+              <a href="https://play.google.com/store/apps/details?id=com.anonymous.bmorebarber" target="_blank">
+              <img width={120} height={120} className="work-logo" src="/google-play.svg" alt="Google Play logo" />
+              </a>
+              </div>
+
+              <div style={{ cursor: 'pointer' }}>
+              <a href="https://apps.apple.com/us/app/next-fade/id6755074770" target="_blank">
+              <img className="work-logo" src="/iOS-appstore.svg" alt="Apple Store logo" />
+              </a>
+              </div>
+            </div>
           </article>
           {/* <article className="work-card">
             <img className="work-logo" width={250} height={100} src="/mfd1.png" alt="My Fire Direct logo" />
@@ -34,6 +47,15 @@ export default function Home() {
             <img className="work-logo" width={200} height={100} src="/aj.svg" alt="Ajarn Jobs logo" />
             <h3>Ajarn jobs</h3>
             <p>Teaching Jobs for expats in Thailand.</p>
+            <p>Browse opportunities, share experiences and connect with other teachers.</p>
+
+            <div style={{ marginTop: '15px'}}>
+            <a style={{ cursor: 'pointer' }} href="https://ajarnjobs.com" target="_blank">
+            <button>Visit Ajarn Jobs</button>
+            </a>
+            </div>
+
+           
           </article>
         </div>
       </section>
