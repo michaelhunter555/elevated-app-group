@@ -4,6 +4,10 @@ import Home from './pages/Home';
 import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
 import AccountDeletion from './pages/AccountDeletion';
+import Explore from './pages/Explore';
+import BetterSaidPrivacy from './pages/better-said/Privacy';
+import BetterSaidTerms from './pages/better-said/Terms';
+import BetterSaidAccountDeletion from './pages/better-said/AccountDeletion';
 
 
 function App() {
@@ -19,6 +23,7 @@ function App() {
           <Link to="/privacy">Privacy</Link>
           <Link to="/terms">Terms</Link>
           <Link to="/account-deletion">Account Deletion</Link>
+          <Link to="/explore">Explore</Link>
         </nav>
       </header>
 
@@ -28,6 +33,10 @@ function App() {
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/account-deletion" element={<AccountDeletion />} />
+          <Route path="/explore" element={<Explore />} />
+          <Route path="/better-said/privacy" element={<BetterSaidPrivacy />} />
+          <Route path="/better-said/terms" element={<BetterSaidTerms />} />
+          <Route path="/better-said/account-deletion" element={<BetterSaidAccountDeletion />} />
         </Routes>
       </main>
 

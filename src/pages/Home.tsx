@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function Home() {
   return (
     <>
@@ -36,6 +38,43 @@ export default function Home() {
               <img className="work-logo" src="/iOS-appstore.svg" alt="Apple Store logo" />
               </a>
               </div>
+            </div>
+          </article>
+          <article className="work-card">
+            <img
+              style={{ borderRadius: '10px' }}
+              className="work-logo"
+              width={100}
+              height={100}
+              src="/bettersaid_appicon.png"
+              alt="Better Said app icon"
+            />
+            <h3>Better Said</h3>
+            <p>Practice and improve public speaking with guided feedback. Coming soon on iOS and Android.</p>
+            <div
+              style={{
+                display: 'flex',
+                flexDirection: 'row',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '10px',
+                opacity: 0.45,
+                pointerEvents: 'none',
+              }}
+              aria-hidden
+            >
+              <img width={120} height={120} className="work-logo" src="/google-play.svg" alt="" />
+              <img className="work-logo" src="/iOS-appstore.svg" alt="" />
+            </div>
+            <p style={{ fontSize: '0.9rem', marginTop: '8px', color: 'var(--muted, #888)' }}>
+              App Store and Google Play links will appear here when the app is live.
+            </p>
+            <div style={{ marginTop: '12px', display: 'flex', flexWrap: 'wrap', gap: '8px', justifyContent: 'center' }}>
+              <Link to="/better-said/privacy">Privacy Policy</Link>
+              <span aria-hidden>·</span>
+              <Link to="/better-said/terms">Terms</Link>
+              <span aria-hidden>·</span>
+              <Link to="/better-said/account-deletion">Account deletion</Link>
             </div>
           </article>
           {/* <article className="work-card">
