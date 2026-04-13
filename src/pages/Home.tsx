@@ -11,13 +11,7 @@ export default function Home() {
 
       <section id="work" className="work-section">
         <h2>Our work</h2>
-        <div style={{ 
-          display: 'flex',
-          flexDirection: 'row', 
-          alignItems: 'stretch', 
-          justifyContent: 'center', 
-          gap: '10px'
-          }}>
+        <div className="work-cards">
           <article className="work-card">
             <img style={{ borderRadius: '10px' }} className="work-logo" width={100} height={100} src="/ba.png" alt="Barber App logo" />
             <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent:"center", gap: '10px' }}>

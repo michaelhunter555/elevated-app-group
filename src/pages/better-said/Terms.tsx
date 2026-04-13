@@ -1,8 +1,11 @@
 import { Link } from 'react-router-dom';
+import BetterSaidLegalNav from './LegalNav';
 
 export default function BetterSaidTerms() {
   return (
-    <section style={{ textAlign: 'left', maxWidth: '800px', margin: '0 auto' }}>
+    <>
+      <BetterSaidLegalNav />
+      <section className="legal-doc">
       <h1>Terms of Service — Better Said</h1>
       <p>
         <em>Last updated: April 8, 2026</em>
@@ -119,6 +122,7 @@ export default function BetterSaidTerms() {
         {" · "}
         <Link to="/better-said/account-deletion">Account deletion</Link>
       </p>
-    </section>
+      </section>
+    </>
   );
 }

@@ -1,8 +1,11 @@
 import { Link } from 'react-router-dom';
+import BetterSaidLegalNav from './LegalNav';
 
 export default function BetterSaidAccountDeletion() {
   return (
-    <section style={{ textAlign: 'left', maxWidth: '800px', margin: '0 auto' }}>
+    <>
+      <BetterSaidLegalNav />
+      <section className="legal-doc">
       <h1>Account &amp; data deletion — Better Said</h1>
       <p>
         You can request deletion of your Better Said account and associated personal data by emailing{" "}
@@ -23,6 +26,7 @@ export default function BetterSaidAccountDeletion() {
         You may also be able to revoke Sign in with Apple or disconnect Google Sign-In from your device or account
         settings; contacting us ensures we process deletion on our systems as well.
       </p>
-    </section>
+      </section>
+    </>
   );
 }

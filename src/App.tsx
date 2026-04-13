@@ -1,5 +1,5 @@
 import './App.css';
-import { Link, Routes, Route } from 'react-router-dom'
+import { Link, Routes, Route, useLocation } from 'react-router-dom'
 import Home from './pages/Home';
 import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
@@ -11,6 +11,9 @@ import BetterSaidAccountDeletion from './pages/better-said/AccountDeletion';
 
 
 function App() {
+  const { pathname } = useLocation();
+  const isBetterSaidLegal = pathname.startsWith('/better-said');
+
   return (
     <div className="app-container">
       <header className="app-header">
@@ -27,7 +30,7 @@ function App() {
         </nav>
       </header>
 
-      <main className="app-main">
+      <main className={`app-main${isBetterSaidLegal ? ' app-main--legal' : ''}`}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/privacy" element={<Privacy />} />

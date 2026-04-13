@@ -1,8 +1,11 @@
 import { Link } from 'react-router-dom';
+import BetterSaidLegalNav from './LegalNav';
 
 export default function BetterSaidPrivacy() {
   return (
-    <section style={{ textAlign: 'left', maxWidth: '800px', margin: '0 auto' }}>
+    <>
+      <BetterSaidLegalNav />
+      <section className="legal-doc">
       <h1>Privacy Policy — Better Said</h1>
       <p>
         <em>Last updated: April 8, 2026</em>
@@ -161,6 +164,7 @@ export default function BetterSaidPrivacy() {
         For account and data deletion requests, you may also use our{" "}
         <Link to="/better-said/account-deletion">account deletion</Link> page.
       </p>
-    </section>
+      </section>
+    </>
   );
 }
